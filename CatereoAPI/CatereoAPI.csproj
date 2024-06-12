@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>fa2f7be6-47cc-4689-9347-db7c7972012e</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\OrderPaymentsController.cs" />
+    <Compile Remove="Controllers\OrderShipmentsController.cs" />
+    <Compile Remove="Controllers\OrderStatusesController.cs" />
+    <Compile Remove="Controllers\ShipmentStatusesController.cs" />
+    <Compile Remove="Controllers\TestController.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="Data\Class.cs" />
+    <Compile Remove="Data\MenuCardMenuItemCard.cs" />
+    <Compile Remove="Data\MenuItemCard.cs" />
+    <Compile Remove="Data\MenuItemIngredient.cs" />
+    <Compile Remove="Data\OrderItem.cs" />
+    <Compile Remove="Model\ShipmentStatuses.cs" />
+    <Compile Remove="Repository\Class.cs" />
+    <Compile Remove="Repository\ContractorRepositoryInterface.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dotConnect.Express.for.PostgreSQL" Version="8.0.0" />
+    <PackageReference Include="Hangfire" Version="1.8.9" />
+    <PackageReference Include="Hangfire.PostgreSql" Version="1.20.5" />
+    <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="6.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\Motylkowe-Beauty-Project\API2022\CatereoAPI\CatereoAPI\Repository\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Data\.editorconfig" />
+    <None Remove="Repository\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\Motylkowe-Beauty-Project\API2022\CatereoAPI\CatereoAPI\Repository\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\Motylkowe-Beauty-Project\API2022\CatereoAPI\CatereoAPI\Repository\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\Motylkowe-Beauty-Project\API2022\CatereoAPI\CatereoAPI\Data\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\Motylkowe-Beauty-Project\API2022\CatereoAPI\CatereoAPI\Data\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>
